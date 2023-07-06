@@ -1,0 +1,80 @@
+h1{
+    color: red;
+    display: inline-block;
+}
+h2{
+    color: green;
+    display: inline-block;
+}
+.outbox{
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+}
+.inbox{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    border: 1px solid green;
+    transform: rotate(45deg) scale(.5); 
+    transition: all 3s ease-in-out;
+    animation: myanimition 2s ease-in infinite alternate ;
+}
+
+@keyframes myanimition{
+    0%{
+        transform: rotate(45deg) scale(.5); 
+    }
+    50%{
+        transform: rotate(90deg) scale(.5); 
+        background-color: green;
+        color: aliceblue;
+    }
+    100%{
+        transform: rotate(180deg) scale(.5); 
+    }
+}
+
+ 
+.filed{
+    width: 800px;
+    margin: auto;
+    height: 200px;
+    background-color: rgb(32, 32, 148);
+    position: relative;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    position: absolute;
+    animation: sun 5s ease-in infinite alternate;
+     
+}
+  @keyframes sun{
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top:150px;
+            left:200px;
+        }
+        50%{
+            top:0px;
+            left:400px;
+        }
+        75%{
+            top:150px;
+            left:600px;
+            background-color: aliceblue;
+        }
+        100%{
+            top:0px;
+            left:750px;
+        }
+  }
